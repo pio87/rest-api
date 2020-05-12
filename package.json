@@ -1,0 +1,51 @@
+{
+  "name": "rest-api",
+  "version": "0.0.1",
+  "description": "Sample HTTP REST API on HapiJS.",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test cross-env AUTO_START=false cross-env LOG_LEVEL=error mocha --color --ui tdd -r ts-node/register 'spec/**/*.spec.ts' --exit --fast",
+    "start": "ts-node-dev --no-deps --ignore-watch node_modules --no-notify --respawn src/index.ts",
+    "build": "rimraf ./dist && tsc --skipLibCheck"
+  },
+  "author": "Piotr Więcaszek <pio.wiecaszek@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/hapi__hapi": "18.2.5",
+    "@types/hapi__joi": "15.0.4",
+    "@types/jsonwebtoken": "^8.3.9",
+    "@types/mocha": "5.2.7",
+    "@types/node": "^13.11.0",
+    "@types/node-rsa": "^1.0.0",
+    "@types/request-promise": "^4.1.46",
+    "@types/sinon": "7.0.13",
+    "@typescript-eslint/eslint-plugin": "2.1.0",
+    "@typescript-eslint/parser": "2.1.0",
+    "chai": "4.2.0",
+    "cross-env": "^7.0.2",
+    "eslint": "6.3.0",
+    "eslint-config-prettier": "6.1.0",
+    "eslint-plugin-prettier": "3.1.0",
+    "mocha": "6.2.0",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "sinon": "7.4.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@hapi/good": "8.2.2",
+    "@hapi/hapi": "18.4.0",
+    "@hapi/joi": "15.1.1",
+    "dotenv": "^8.2.0",
+    "hapi-auth-jwt2": "^10.1.0",
+    "hapi-good-winston": "^3.0.0",
+    "joi-extract-type": "^15.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "node-rsa": "^1.0.8",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "uuid": "3.3.3",
+    "winston": "^3.2.1"
+  }
+}
