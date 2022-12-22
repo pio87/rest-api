@@ -41,7 +41,7 @@
     "hapi-auth-jwt2": "^10.1.0",
     "hapi-good-winston": "^3.0.0",
     "joi-extract-type": "^15.0.2",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "node-rsa": "^1.0.8",
     "request": "^2.88.2",
     "request-promise": "^4.2.5",
